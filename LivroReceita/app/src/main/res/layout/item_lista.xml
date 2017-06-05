@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/background_item_lista">
+
+    <ImageView
+        android:id="@+id/item_list_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/icon_chef"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:id="@+id/item_list_nome"
+            android:text="Brigadeiro"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:textColor="@color/colorTitle"/>
+
+        <RatingBar
+            android:id="@+id/item_list_nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="5" />
+
+
+        <!-- Cria uma linha entre um item e outro
+          <View
+             android:id="@+id/vw_divider"
+             android:layout_marginTop="10dp"
+             android:layout_marginRight="56dp"
+             android:background="@color/colorPrimary"
+             android:layout_width="match_parent"
+             android:layout_height="0.8dp" />-->
+    </LinearLayout>
+
+</LinearLayout>
