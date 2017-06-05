@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "626952272228",
+    "firebase_url": "https://livro-de-receita.firebaseio.com",
+    "project_id": "livro-de-receita",
+    "storage_bucket": "livro-de-receita.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626952272228:android:40478e268fb9cef8",
+        "android_client_info": {
+          "package_name": "com.tibaes.livroreceita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626952272228-vncjq16qo4f121lh1ulbshrfk4uiehmr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tibaes.livroreceita",
+            "certificate_hash": "aabfb3e75e29135e189032a2103ab5aa44129b38"
+          }
+        },
+        {
+          "client_id": "626952272228-k0m2js6j9418v73o4n2hvmj0oqa6jqnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEmfxDXQby6cUHb7K4Gq2T8TpZzWQ-kNw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626952272228-k0m2js6j9418v73o4n2hvmj0oqa6jqnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
