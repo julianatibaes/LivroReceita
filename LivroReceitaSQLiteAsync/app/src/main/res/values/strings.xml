@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LivroReceitaSQLite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Pesquisar</string>
+    <string name="error_message">OPS! Não houve resultados. Tente novamente.</string>
+</resources>
