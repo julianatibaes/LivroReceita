@@ -1,0 +1,24 @@
+package com.tibaes.livroreceitaretrofit;
+
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class ListaReceitaActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lista_receita);
+
+        /*if (getResources().getBoolean(R.bool.modoGrande)) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            FragmentTransaction tx = fragmentManager.beginTransaction();
+            tx.replace(R.id.list_receita, new ListaReceitaFragment());
+            tx.replace(R.id.new_receita, new NovaReceitaFragment());
+            tx.commit();
+        }
+        */
+    }
+}
