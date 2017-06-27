@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html  ng-app="livroreceitas">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<!-- Colocando as bibliotecas do bootstrap, para deixar
+	meu site mais bonito -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	
+	<!-- Colocando as bibliotecas do AngularJS -->
+	<script src="js/lib/angular.min.js"></script>
+	<script src="js/lib/angular-route.min.js"></script>
+	
+	<!-- Chamando a classe principal do nosso AngularJS
+	Nela quem definimos o módulo que iremos trabalhar no
+	projeto -->
+	<script src="main.js"></script>
+	
+	<script src="js/controller/receita-nova-controller.js"></script>
+</head>
+<body ng-controller="ReceitaNovaController">
+
+	<!-- DIV principal da minha tela, usando bootstrap -->
+	<div class="container">
+	
+	<!-- DIV para colocar o título da página, usando bootstrap -->
+	<div class="jumbotron">
+		<h1 class="text-center">Receita </h1>
+	</div>
+	
+	
+	<!-- a row com o campo de busca -->
+    <div class="row">
+    
+    <!-- A ação do formulário será acionada no ng-submit, chamando o método submeter() -->
+    <form name="formulario" class="row" ng-submit="submeter()">
+    <div class="col-md-6 col-xs-12">
+    
+    	<div class="form-group">
+	        <label>Nome Receita</label>
+	        
+	        <input name="nome" class="form-control" 
+        			ng-model="receita.nome" required
+        			ng-maxlength="50"/>
+        </div>
+        
+        <div class="form-group">
+	        <label>Nível de dificuldade da receita</label>
+	        
+	        <input name="nivelDificuldade" class="form-control" 
+        			ng-model="receita.nivelDificuldade"/>
+        </div>
+    
+    	<div class="form-group">
+    		<button type="submit" class="btn btn-primary" ng-disabled="formulario.$invalid">
+            		Salvar
+        	</button>
+         	<a href="http://localhost:8080/WebClientRest/" class="btn btn-primary">Voltar</a>
+        	<hr>
+        </div>
+    </div>
+    </form>
+    
+    </div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
